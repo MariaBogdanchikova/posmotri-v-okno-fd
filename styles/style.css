@@ -101,20 +101,20 @@ ol {
 
 .result__video-container {
   position: relative;
-  max-height: 385px;
+  height: 385px;
 }
 
 .result__video {
   box-sizing: border-box;
-  inline-size: 100%; /* Растянуть на всю ширину контейнера */
-  block-size: 100%; /* Растянуть на всю высоту контейнера */
-  object-fit: cover; /* Видео полностью заполняет контейнер */
+  inline-size: 100%; 
+  block-size: 100%; 
+  object-fit: cover; 
 }
 
  .content__list {
   display: flex;
   flex-direction: column;
-  gap: 23 px;
+  gap: 30px;
   justify-content: space-around;
 } 
 
@@ -126,16 +126,16 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  width: 100%; /* Фиксированная ширина для изображения */
-  block-size: 103px; /* Фиксированная высота для изображения */
-  object-fit: cover; /* Изображение заполняет элемент */
-  object-position: center; /* Центрирование изображения */
+  width: 100%; 
+  block-size: 103px; 
+  object-fit: cover; 
+  object-position: center; 
   flex-grow: 0;
 }
 
 .content__video-card-description-container {
   display: flex;
-  flex-direction: column; /* Внутренние элементы в колонку */
+  flex-direction: column; 
   flex-grow: 1; 
 } 
 
