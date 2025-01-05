@@ -84,9 +84,12 @@ ol {
 }
 
 .content__list-container {
-  block-size: 100%; /* Растянуть контейнер на всю высоту */
-  overflow-y: auto; /* Добавить скролл при переполнении */
-} 
+  block-size: 100%;
+  position: relative;
+  max-height: 299px;
+  overflow: auto;
+  padding-bottom: 2px;
+}
 
 .content__details {
   grid-area: details;
@@ -136,15 +139,26 @@ ol {
 .content__video-card-description-container {
   display: flex;
   flex-direction: column; 
-  flex-grow: 1; 
+  flex-grow: 1;
 } 
+
+.search-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 15px;
+  padding-bottom: 3px;
+  border: none;
+  min-width: 225px;
+}
 
 .search-form__fieldset-title {
   font-family: "Fira Sans Condensed", sans-serif;
-  font-size: 18px;
   font-weight: 400;
-  line-height: 22px;
-} 
+  font-size: 18px;
+  color: #ffffff;
+  padding-bottom: 5px;
+}
 
 .title {
   font-family: "Oswald", sans-serif;
@@ -187,26 +201,15 @@ ol {
   overflow: hidden;
 }
 
-/*fff*/
-
 .button {
-  background-color: transparent;
-  box-shadow: none;
-  border: 1px solid currentColor;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
   font-size: 18px;
+  background-color: transparent;
+  border: 1px solid currentColor;
   color: white;
   min-height: 34px;
   cursor: pointer;
-}
-
-.button:hover {
-  text-decoration: underline;
-}
-
-.button:active {
-  background-color: #545050;
 }
 
 .button:focus {
@@ -215,6 +218,14 @@ ol {
 
 .button:focus-visible {
   outline: 1px solid white;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
 }
 
 .search-form__submit-button {
@@ -226,33 +237,17 @@ ol {
   width: 100%;
 }
 
-.search-form__fieldset {
-  border: none;
-  min-width: 225px;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 3px;
-}
-
-.search-form__fieldset-title {
-  font-family: "Fira Sans Condensed", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  color: white;
-  padding-bottom: 5px;
-}
-
 .search-form__textfield {
+  width: 100%;
+  border-right: none;
+  cursor: pointer;
   background-color: transparent;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  color: white;
+  color: #ffffff;
   border-bottom: 1px solid currentColor;
   border-top: 1px solid currentColor;
-  width: 100%;
-  border-right: none;
-  cursor: pointer;
 }
 
 .content__video-card-description-container {
@@ -280,6 +275,14 @@ ol {
 
 }
 
+.search-form__label-text {
+  align-self: end;
+}
+
+.search-form__label {
+  cursor: pointer;
+}
+
 .content__card-link_current {
   background-color: #545050;
 }
@@ -292,15 +295,7 @@ ol {
   display: flex;
   gap: 15px;
   min-height: 22px;
-  padding-left: 7px;;
-}
-
-.search-form__label-text {
-  align-self: end;
-}
-
-.search-form__label {
-  cursor: pointer;
+  padding-left: 7px;
 }
 
 .search-form__pseudo-checkbox {
@@ -311,11 +306,4 @@ ol {
   background-color: transparent;
   border: 1px solid white;
   position: relative;
-}
-
-.content__list-container {
-  position: relative;
-  max-height: 299px;
-  overflow: auto;
-  padding-bottom: 2px;
 }
