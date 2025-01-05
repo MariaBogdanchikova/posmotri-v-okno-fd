@@ -127,8 +127,8 @@ ol {
 .content__video-card-thumbnail {
   width: 100%; 
   block-size: 103px; 
-  object-fit: cover; 
-  object-position: center; 
+  object-fit: cover;
+  object-position: center;
   flex-grow: 0;
 }
 
@@ -180,10 +180,10 @@ ol {
   font-size: 30px; 
   font-weight: 700; 
   line-height: 1; 
-  color: #ffffff; 
-  overflow: hidden; 
-  white-space: nowrap; 
-  text-overflow: ellipsis; 
+  color: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   text-transform: uppercase;
 }
 
