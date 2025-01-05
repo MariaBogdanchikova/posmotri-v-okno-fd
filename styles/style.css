@@ -93,12 +93,10 @@ ol {
   grid-area: details;
   display: flex;
   justify-content: space-between;
-  flex-direction: column; /* Элементы внутри идут в колонку */
-  inline-size: 100%; /* Растянуть на доступную ширину */
-  block-size: 100%; /* Растянуть на доступную высоту */
+  flex-direction: column;
+  inline-size: 100%; 
+  block-size: 100%; 
 }
-
-/* выше ок */
 
 .result__video-container {
   position: relative;
@@ -152,12 +150,6 @@ ol {
 }
 
 .search-form__fieldset-title {
-  /*font-family: "Fira Sans Condensed", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  color: #ffffff;
-  padding-bottom: 10px;
-  text-align: left; */
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
