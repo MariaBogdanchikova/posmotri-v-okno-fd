@@ -94,8 +94,8 @@ ol {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  inline-size: 100%; 
-  block-size: 100%; 
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .result__video-container {
@@ -135,7 +135,7 @@ ol {
 .content__video-card-description-container {
   width: 100%;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   flex-grow: 1;
 }
 
@@ -172,7 +172,7 @@ ol {
 
 .content__card-link {
   display: block;
-  text-decoration: none; 
+  text-decoration: none;
   color: #ffffff;
 }
 
