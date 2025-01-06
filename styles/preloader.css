@@ -60,14 +60,9 @@
 input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   content: "";
   background-color: white;
-  display: inline-block;
+  display: block;
   width: 15px;
   height: 15px;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
 }
 
 .visually-hidden {
