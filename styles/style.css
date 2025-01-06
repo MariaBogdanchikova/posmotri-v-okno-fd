@@ -147,7 +147,7 @@ ol {
   min-width: 225px;
   justify-content: space-between;
   gap: 7px;
-  margin-top: 22px;
+  margin-top: 15px;
 }
 
 .search-form__fieldset-title {
@@ -155,8 +155,7 @@ ol {
   font-weight: 400;
   line-height: 21.6px;
   color: #fff;
-  text-align: left;
-} 
+}
 
 .title {
   font-family: "Oswald", sans-serif;
@@ -269,14 +268,14 @@ ol {
 }
 
 .search-form__label-text {
-  align-self: center;
+  margin-bottom: 10px
 }
 
 .search-form__label {
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .content__card-link_current {
