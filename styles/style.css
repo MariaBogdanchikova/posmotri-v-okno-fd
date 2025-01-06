@@ -268,14 +268,15 @@ ol {
 }
 
 .search-form__label-text {
-  margin-bottom: 10px
+  margin-bottom: 8px;
 }
 
 .search-form__label {
   cursor: pointer;
   display: flex;
-  align-items: center;
-  gap: 5px;
+  align-items: center; 
+  gap: 5px; 
+  margin-bottom: 2px;
 }
 
 .content__card-link_current {
