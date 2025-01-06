@@ -208,6 +208,7 @@ ol {
   color: white;
   min-height: 34px;
   cursor: pointer;
+  margin-bottom: 5px;
 }
 
 .button:focus {
@@ -303,5 +304,5 @@ ol {
   background-color: transparent;
   border: 1px solid white;
   position: relative;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
